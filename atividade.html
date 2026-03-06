@@ -5,30 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Dashboard - Ciência de Dados</title>
     <style>
-        /* CSS BASE - ESTE É O BLOCO QUE ELES VÃO ALTERAR NA BRANCH */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f2f5; /* Cor para alterar no modo noturno */
-            color: #333;               /* Cor para alterar no modo noturno */
+            
+            background:
+                radial-gradient(circle at 20% 20%, #1a1a1a, #000000),
+                radial-gradient(circle at 80% 80%, #111111, #000000);
+
+            color: white;
+
             margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
         }
-
         .dashboard-container {
-            background-color: white; /* Cor para alterar no modo noturno */
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+
+            padding: 35px;
+            border-radius: 16px;
+
+            border: 1px solid rgba(255,255,255,0.15);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+
             text-align: center;
             max-width: 500px;
             width: 100%;
         }
-
         h1 {
-            color: #007bff;
+            color: #ffffff;
             margin-bottom: 20px;
         }
 
@@ -39,9 +47,11 @@
         }
 
         .card {
-            background: #e9ecef;
-            padding: 15px;
-            border-radius: 8px;
+            background: rgba(255,255,255,0.08);
+            padding: 18px;
+            border-radius: 10px;
+
+            border: 1px solid rgba(255,255,255,0.1);
         }
 
         .card-value {
@@ -52,7 +62,8 @@
 
         .card-label {
             font-size: 14px;
-            color: #666;
+            color: #ffffff;
+            font-weight: 500;
         }
     </style>
 </head>
@@ -72,8 +83,10 @@
             </div>
         </div>
 
-        <p style="margin-top: 25px; font-size: 12px; color: #999;">
-            Status do Servidor: <span style="color: green;">● Online</span>
+        <p style="margin-top: 25px; font-size: 12px; color: #ffffff;
+                    font-size: 15px;">
+            Status do Servidor: <span style="color: rgb(255, 255, 255);
+            margin-left: 25px;">● Online</span>
         </p>
     </div>
 
